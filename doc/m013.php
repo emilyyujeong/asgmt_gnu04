@@ -9,7 +9,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 <div class="content">
-                            <div class="wayto">
+<div class="wayto">
                                 <h2>쌍용건설</h2>
                                 <div class="contact">
                                     <ul>
@@ -37,18 +37,50 @@ include_once(G5_THEME_PATH.'/head.php');
                                         new daum.roughmap.Lander({
                                             "timestamp": "1675843318900",
                                             "key": "2doox",
-                                            "mapWidth": "800",
+                                            "mapWidth": "900",
                                             "mapHeight": "360"
                                         }).render();
                                     </script>
                                 </div>
                                 <div class="public">
                                     <h2>대중교통편</h2>
+
+                                    <div class="transport_wrap">
+                                        <article class="train_wrap">
+                                            <h4>지하철</h4>
+                                            <div class="">
+                                                <dl class="train_8">
+                                                    <dt>8호선 잠실역</dt>
+                                                    <dd>9번 출구 신천 어린이교통공원 맞은편 쌍용건설 본사</dd>
+                                                </dl>
+                                                <dl class="train_2">
+                                                    <dt>2호선 잠실역</dt>
+                                                    <dd>8번 출구 KDB 산업은행 잠실지점에서 좌회전 마이스터 본사</dd>
+                                                </dl>
+                                            </div>
+                                        </article>
+                                        <article class="bus_wrap">
+                                            <h4>버스</h4>
+                                            <div class="">
+                                                <dl class="bus01">
+                                                    <dt>간선</dt>
+                                                    <dd>302, 303, 320, 341, 342</dd>
+                                                </dl>
+                                                <dl class="bus02">
+                                                    <dt>지선</dt>
+                                                    <dd>3216, 3313, 3315, 3319, 3413, 3414, 4319</dd>
+                                                </dl>
+                                                <dl class="bus03">
+                                                    <dt>도시</dt>
+                                                    <dd>30-1, 30-3, 30-5, 70</dd>
+                                                </dl>
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
 
 
                             </div>
-
 
                         </div>
 

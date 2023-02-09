@@ -23,7 +23,7 @@ h6 {
 
 
 h2 {
-    font-size: 40px;
+    /* font-size: 40px; */
     font-weight: 700;
 }
 
@@ -41,6 +41,9 @@ p {
     margin: 0 auto;
 }
 
+.mc {
+    color: #8b7e6d;
+}
 
 
 .Wrap {}
@@ -308,7 +311,7 @@ p {
     margin: 0 auto;
 }
 
-.mainNews .inner>div {
+.mainNews .inner>a {
     position: relative;
     flex: 1;
 }
@@ -336,8 +339,12 @@ p {
 
 .mainNews .itm h3 {
     font-size: 20px;
-    font-weight: 500;
     min-height: 70px;
+    max-width: 360px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
@@ -655,11 +662,36 @@ p {
     line-height: 30px;
 }
 
-.content p {
-    margin: 50px 0;
-    word-break: keep-all;
+.intro {
+    display: flex;
+    position: relative;
+
 }
 
+.intro .desc {
+    display: block;
+    transform: translateY(30%);
+
+}
+
+.intro strong {
+    font-size: 24px;
+}
+
+.intro span {
+    display: block;
+    color: #8b7e6d;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 21px;
+    word-break: keep-all;
+    color: #666;
+}
 
 
 /* sub 01 - 2 연혁 */
@@ -738,8 +770,9 @@ p {
 
 /* sub 01 - 3 연혁 */
 .wayto h2 {
+    font-size: 40px;
     text-align: center;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .wayto h2::after {
@@ -747,14 +780,14 @@ p {
     display: block;
     width: 30px;
     height: 2px;
-    background: #333;
+    background: #8b7e6d;
     margin: 20px auto;
 }
 
-.wayto .contact ul>li {
-    display: inline-block;
-    padding: 0 15px;
-
+.wayto .contact ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 20px auto;
 }
 
 .bold {
@@ -763,22 +796,22 @@ p {
 }
 
 .map {
-    margin: 30px 0;
-    margin-left: 20px;
+    margin: 0 auto 50px auto;
 }
 
 
 /* PUBLIC TRANSPORTAION INTRO */
 
 .transport_wrap {
-    width: 800px;
-    margin: 30px auto 0;
-    padding: 0 50px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 63px;
     border: 3px solid #efefef;
     box-sizing: border-box;
+
 }
 
-.train_wrap {
+.transport_wrap article {
     padding: 30px 0 30px 166px;
     position: relative;
 }
@@ -789,11 +822,16 @@ p {
     color: #333;
 }
 
+.transport_wrap .train_wrap div {
+    padding: 20px 0 0;
+    line-height: 27px;
+}
+
 .train_wrap:before {
     background-image: url(../img/train_icon.png);
 }
 
-.transport_wrap article:before {
+.transport_wrap article::before {
     width: 105px;
     height: 105px;
     display: block;
@@ -860,7 +898,48 @@ p {
     display: inline-block;
 }
 
-/* sub 03 - 1 */
+.transport_wrap .bus_wrap div {
+    padding: 20px 0 0;
+    line-height: 27px;
+}
+
+.bus_wrap::before {
+    background-image: url(../img/bus_icon.png);
+}
+
+.bus01 dt {
+    background-color: #0168c7;
+}
+
+.bus02 dt {
+    background-color: #6ec940;
+}
+
+.bus_wrap div dl.bus03 dt {
+    background-color: #444444;
+}
+
+.bus_wrap div dl dt {
+    display: inline-block;
+    width: 44px;
+    font-size: 15px;
+    height: 26px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.bus_wrap div dl dd {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+.bus_wrap div dl.bus02 {
+    padding: 5px 0;
+}
+
+
+/* sub 02 - 1 */
 
 
 .sub_itm {
@@ -890,5 +969,48 @@ p {
 .sub_itm img {
     width: 100%;
     height: 300px;
+
+}
+
+
+/* sub 03 - 1 */
+
+.tech_lab {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.tech_lab h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.tech_lab h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #8b7e6d;
+    margin: 20px auto;
+}
+
+.tech_lab strong {
+    display: block;
+    font-size: 20px;
+    line-height: 35px;
+
+}
+
+.tech_lab p {
+    margin: 40px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.achieve {
+    background: #f1f1f1;
+    margin-top: 100px;
+    padding: 50px 0;
 
 }
